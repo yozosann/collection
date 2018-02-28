@@ -19,3 +19,8 @@ export const parseUrl = (url = '') => {
   a.href = url
   return only(a, ['protocol', 'host', 'pathname', 'port', 'search', 'hash'])
 }
+
+// 快速循环
+Array.apply(null, { length: 20 }).map(function () {
+  return createElement('p', 'hi')
+})
